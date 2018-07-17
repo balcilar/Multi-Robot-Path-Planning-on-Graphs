@@ -12,6 +12,21 @@ Following figure shows a possible configuration and its possible goal configurat
 
 ![Alt Text](Output/startendpositions.jpg)
 
+During a discrete time step, each robot may either remain stationary or move to an adjacent vertex. To formally describe a plan, let a scheduled path be a map *pi : Z+ → V* , in which *Z+ := N ∪ {0}*. A scheduled path pi is feasible if it satisfies the following properties: 
+
+* 1) pi(0) = xI (ri). 
+
+* 2) For each i, there exists a smallest ti ∈ Z+ such that pi(ti) = xG(ri). 
+
+* 3) For any t ≥ ti, pi(t) ≡ xG(ri). 
+
+* 4) For any 0 ≤ t < ti , (pi(t), pi(t + 1)) ∈ E or pi(t) = pi(t + 1) (if pi(t) = pi(t + 1)
+
+robot ri stays at vertex pi(t) between the time steps t and t + 1). We say that two paths pi, pj are in collision if there exists k ∈ Z+ such that pi(t) = pj (t) (meet collision) or (pi(t), pi(t + 1)) = (pj (t + 1), pj (t)) (head-on collision). 
+
+## Solution
+
+
 
 
 ![Alt Text](Output/result.gif)
