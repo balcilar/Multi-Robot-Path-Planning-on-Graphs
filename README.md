@@ -26,7 +26,18 @@ robot ri stays at vertex pi(t) between the time steps t and t + 1). We say that 
 
 ## Solution
 
+To solve above problem, we implemented A* algorithm to find optimum route from given initial 3x3 robot positions and desired 3x3 robot positions. You can define your own start and end positions of all 9 robot repectively. For instance here is the demo's starting and end positions.
+``` 
+sp=[3 5 6 2 9 7 8 4 1];
+ep=[1 2 3 4 5 6 7 8 9] + ngrid*ngrid*(ts-1);
+```
+You should define all 9 robots start position with sp vector. !st elemnet show 1st robot position, 2nd element show 2nd robot position. So as given vector, 1st robot stay on 3th cell, 2nd robot stay on 5th cell, as how it was in above figure. 
 
+You can run all demo with following command.
+``` 
+> main
+```
+Then you will take following results for given start and end positions.
 
 
 ![Alt Text](Output/result.gif)
