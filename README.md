@@ -26,7 +26,7 @@ robot ri stays at vertex pi(t) between the time steps t and t + 1). We say that 
 
 ## Solution
 
-To solve above problem, we implemented A* algorithm to find optimum route from given initial 3x3 robot positions and desired 3x3 robot positions. First algorithm starts to construct graph whose connections shows us possible movement. Then we extented it as time based graph. According to time extented graph, all nodes are dublicated for every single of time step. that means if we have 3x3 node for given example, we will have 3x3xts number of node in our time expanded graph for ts time span analysis as we set it ts=7 for our demo. every node in t layer has its own node in (t+1) layer but it has connection to one step far nodes in (t+1) layer as well.
+To solve above problem, we implemented A* algorithm to find optimum route from given initial 3x3 robot positions and desired 3x3 robot positions. First algorithm starts to construct graph, whose connections shows possible movement. Then we extented it as time based graph. According to time extented graph, all nodes are dublicated for every single of time step. That means, if we have 3x3 node for given example, we will have 3x3xts number of node in our time expanded graph. We set it ts=7 for our demo which means algorithm just search optimal solution up to 7 time step. Every node in t layer has connection to its own node in (t+1) layer but it has connection to one step far nodes in (t+1) layer as well.
 
 ## Result
 
